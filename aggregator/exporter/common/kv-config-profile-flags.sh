@@ -3,7 +3,7 @@
 set -euo pipefail
 
 echo '| Kind | Detail | Source Owners | Sources |'
-echo '| ---- | ------ | ------------: | ------: |'
+echo '| :--- | :----- | ------------: | ------: |'
 
 profileFields="$(
   sqlite3 mnt/dataset/aggregate/db.sqlite \

@@ -5,10 +5,13 @@ set -euo pipefail
 echo "# Theme (fontFamily)"
 
 echo
+./aggregator/exporter/common/kv-config-actions.sh fontFamily
+
+echo
 echo '## Custom Fonts'
 echo
 echo ' Font | Source Owners | Sources |'
-echo ' ---- | ------------: | ------: |'
+echo ' :--- | ------------: | ------: |'
 
 sqlite3 --json mnt/dataset/aggregate/db.sqlite \
   "$( cat <<EOF

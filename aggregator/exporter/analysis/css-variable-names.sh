@@ -6,7 +6,7 @@ echo
 echo '# CSS Variable Names'
 echo
 echo ' Variable Name | Source Owners | Sources |'
-echo ' ------------- | ------------: | ------: |'
+echo ' :------------ | ------------: | ------: |'
 
 sqlite3 --json mnt/dataset/aggregate/db.sqlite \
   "$( cat <<EOF

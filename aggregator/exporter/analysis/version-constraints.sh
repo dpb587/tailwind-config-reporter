@@ -44,7 +44,7 @@ EOF
       "### \(.[0].packageName)",
       "",
       "| Version Constraint | Source Owners | Sources |",
-      "| ------------------ | ------------: | ------: |",
+      "| :----------------- | ------------: | ------: |",
       map("| **`\(.packageVersionConstraint)`** | \(.sourceOwners) | \(.sources) |")[]
     ])[])[]
   '

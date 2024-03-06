@@ -10,7 +10,7 @@ echo
 echo '## Summary'
 
 echo '| Package | Source Owners | Sources |'
-echo '| ------- | ------------: | ------: |'
+echo '| :------ | ------------: | ------: |'
 sqlite3 --json mnt/dataset/aggregate/db.sqlite \
   "$( cat <<EOF
     WITH q AS (
@@ -82,7 +82,7 @@ EOF
       "### \(.[0].packageName)",
       "",
       "| Version | Source Owners | Sources |",
-      "| ------- | ------------: | ------: |",
+      "| :------ | ------------: | ------: |",
       map("| **`\(.packageVersion)`** | \(.sourceOwners) | \(.sources) |")[]
     ])[])[]
   '

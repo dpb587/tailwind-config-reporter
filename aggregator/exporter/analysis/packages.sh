@@ -6,7 +6,7 @@ echo
 echo '# Packages'
 
 echo '| Package | Source Owners | Sources |'
-echo '| ------- | ------------: | ------: |'
+echo '| :------ | ------------: | ------: |'
 sqlite3 --json mnt/dataset/aggregate/db.sqlite \
   "$( cat <<EOF
     WITH q AS (

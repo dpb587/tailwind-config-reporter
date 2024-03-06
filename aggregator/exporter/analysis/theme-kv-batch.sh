@@ -94,6 +94,9 @@ do
   (
     echo "# Theme (${property})"
 
+    echo
+    ./aggregator/exporter/common/kv-config-actions.sh "${property}"
+
     if grep -q "_configValue" <<<"${known}"
     then
       echo

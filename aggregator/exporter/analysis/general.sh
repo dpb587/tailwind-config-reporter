@@ -8,7 +8,7 @@ echo
 echo '## Disabled Core Plugins'
 echo
 echo '| Core Plugin | Source Owners | Sources |'
-echo '| ----------- | ------------: | ------: |'
+echo '| :---------- | ------------: | ------: |'
 
 sqlite3 --json mnt/dataset/aggregate/db.sqlite \
   "$( cat <<EOF
@@ -40,7 +40,7 @@ echo
 echo '## Content File Extensions'
 echo
 echo '| Extension | Source Owners | Sources |'
-echo '| --------- | ------------: | ------: |'
+echo '| :-------- | ------------: | ------: |'
 
 sqlite3 --json mnt/dataset/aggregate/db.sqlite \
   "$( cat <<EOF
@@ -73,7 +73,7 @@ echo
 echo '## Prefix'
 echo
 echo '| Prefix | Source Owners | Sources |'
-echo '| ------ | ------------: | ------: |'
+echo '| :----- | ------------: | ------: |'
 
 sqlite3 --json mnt/dataset/aggregate/db.sqlite \
   "$( cat <<EOF

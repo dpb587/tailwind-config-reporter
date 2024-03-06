@@ -3,7 +3,7 @@
 set -euo pipefail
 
 echo '| Name | Source Owners | Sources |'
-echo '| ---- | ------------: | ------: |'
+echo '| :--- | ------------: | ------: |'
 
 sqlite3 --json mnt/dataset/aggregate/db.sqlite \
   "$( cat <<EOF
