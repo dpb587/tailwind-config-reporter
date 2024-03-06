@@ -87,6 +87,7 @@ sqlite3 --json mnt/dataset/aggregate/db.sqlite \
         LEFT JOIN tailwind_changes
           ON tailwind_changes.context_analysisKey = metadata.context_analysisKey
           AND tailwind_changes.prefix_configValue IS NOT NULL
+        WHERE extract_completed = 1
       )
       SELECT
         configValue,
